@@ -346,6 +346,9 @@ body{
   justify-content: space-between;
 }
 .clients__item {}
+.clients__item img{
+  max-width: 100%;
+}
 .clients__item:last-child{
   margin: -5px;
 }
