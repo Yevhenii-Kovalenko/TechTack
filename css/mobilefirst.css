@@ -440,10 +440,10 @@ body{
 }
 .cards__text {
   font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0.016em;
-    color: #7C7C7C;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.016em;
+  color: #7C7C7C;
 }
 .cards__text:not(:last-child){
   margin-bottom: 8px;
@@ -453,6 +453,67 @@ body{
   font-size: 16px;
   line-height: 150%;
   color: #1D2225;;
+}
+
+@media (min-width:992px){
+.services__body{
+  margin-bottom: 65px;
+}
+.title {
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 70px;
+  color: #232425;
+  }
+.services__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  color: #303E49;
+}
+.cards__items {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  gap: 24px;
+}
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  padding: 43px 51px;
+  
+  text-align: left;
+  border: 2px solid #DCDCDC;
+  border-radius: 16px;
+}
+.cards__image{
+  margin-left: 15px;
+}
+.cards__image:not(:last-child){
+  margin-bottom: 28px;
+}
+.cards__image img{
+  min-width: 88px;
+  max-height: 88px;
+}
+.cards__body {
+  margin-left: ;
+}
+.cards__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1D2225;
+}
+.cards__title:not(:last-child){
+  margin-bottom: 28px;
+}
+.cards__text{
+  font-size: 16px;
+}
+.cards__text:not(:last-child){
+  margin-bottom: 38px;
+}
 }
 /*----------WHY-------------------------*/
 .why {
