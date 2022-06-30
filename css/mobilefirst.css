@@ -582,7 +582,9 @@ body{
   display: flex;
 }
 
-.why-use__image {}
+.why-use__image  {
+  
+}
 
 .why-use__body{
   margin-left: 10px;
@@ -666,6 +668,20 @@ body{
 }
 .why-use__item:not(:last-child){
   margin-right: 97px;
+}
+.why-use__body {
+  margin-left: 20px;
+}
+.why-use__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.why-use__text {
+  font-size: 16px;
+}
+.why-use__image img {
+  width: 40px;
+  height: 40px;
 }
 }
 /*----------ADVANTAGES-------------------------*/
