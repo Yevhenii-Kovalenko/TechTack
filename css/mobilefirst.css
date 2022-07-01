@@ -793,6 +793,9 @@ body{
 .pricing__table {
 
 }
+.pricing__table-full{
+  display: none;
+}
 table {
   text-align: left;
   border-radius: 10px 10px;
@@ -842,6 +845,9 @@ table th , table td {
   display: flex;
   margin-bottom: 35px;
 }
+.pricing__buttons-full{
+  display: none;
+}
 .pricing__btn{
   border-radius: 10px;
   padding: 14px 16px;
@@ -863,6 +869,64 @@ table th , table td {
   border: 1px solid #3A78F2;
   color: #3A78F2;
   transition: all 0.6s ease 0s;
+}
+@media (min-width:992px){
+  .pricing{
+    margin-top: 120px;
+  }
+  .pricing__subtitle{
+    font-size: 24px;
+    line-height: 27px;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  .pricing__title:not(:last-child) {
+  margin-bottom: 16px;
+}
+.pricing__table {
+  display: none;
+}
+table{
+  width: 100%;
+}
+th{
+  padding: 25px 24px;
+  font-size: 24px;
+  line-height: 30px;
+
+}
+td{
+  font-size: 16px;
+  line-height: 20px;
+  padding: 22px 24px;
+  width: 1200px;
+}
+th{
+  padding-right: 90px;
+}
+th:not(:first-child){
+  text-align: right;
+}
+td:not(:first-child){
+  text-align: center;
+}
+table th,
+table td {
+  padding-left: 24px;
+}
+.pricing__table-full{
+  display: block;
+}
+.pricing__button{
+  display: none;
+}
+.pricing__buttons-full{
+  display: block;
+}
+td.bold {
+  font-size: 24px;
+  line-height: 30px;
+}
 }
 /*----------SAY-------------------------*/
 .say {
