@@ -1333,7 +1333,9 @@ label{
 .footer__social {
 
 }
-
+.footer__social-full{
+  display: none;
+}
 .social {}
 
 .social__item {
@@ -1437,4 +1439,81 @@ label{
   line-height: 12px;
   color: #fff;
   text-align: center;
+}
+@media (min-width:992px){
+  footer{
+  padding: 66px 120px;
+  }
+  .footer__social{
+    display: none;
+  }
+  .footer__social-full{
+    display: block;
+  }
+  .footer__body{
+    display: flex;
+  }
+  .footer__top {
+    padding: 30px 0px;
+    margin-right: 70px;
+  }
+.footer__column {
+  
+}
+.footer__column:not(:last-child){
+  margin-right: 100px;
+}
+.footer__subscribe{
+  margin-left: 89px;
+}
+.adres__info ,.adres__street, .adres__time {
+  font-size: 14px;
+  line-height: 18px;
+}
+.adres__info{
+  margin-bottom: 15px;
+}
+.adres__street{
+  margin-bottom: 9px;
+}
+.menu-footer-link{
+  margin-bottom: 11px;
+}
+.subscribe__title{
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 29px;
+}
+.subscribe__subtitle{
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 37px;
+}
+.subscribe__body{
+  display: flex;
+  
+  
+}
+.subscribe__email {
+  padding: 15px 121px 15px 13px;
+  width: 255px;
+  margin-right: 26px;
+  text-align: center;
+}
+.subscribe__btn{
+  margin-top: -27px;
+}
+.subscribe__button {
+  padding: 20px 20px;
+  background: #3A78F2;
+  color: #fff;
+}
+.footer__copy{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright{
+  font-size: 14px;
+  line-height: 18px;
+}
 }
