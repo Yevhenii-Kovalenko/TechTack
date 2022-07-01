@@ -844,6 +844,7 @@ table th , table td {
 .pricing__button {
   display: flex;
   margin-bottom: 35px;
+  justify-content: center;
 }
 .pricing__buttons-full{
   display: none;
@@ -851,11 +852,10 @@ table th , table td {
 .pricing__btn{
   border-radius: 10px;
   padding: 14px 16px;
-  margin: 0 auto;
+  
 }
 .pricing__button-border {
   color: #fff;
-  
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -920,12 +920,37 @@ table td {
 .pricing__button{
   display: none;
 }
-.pricing__buttons-full{
-  display: block;
-}
 td.bold {
   font-size: 24px;
   line-height: 30px;
+}
+.pricing__buttons-full{
+  display: flex;
+  justify-content: flex-end;
+}
+.pricing__btn {
+  border-radius: 10px;
+  padding: 22px 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  width: 188px;
+  margin-right: 55px;
+}
+.pricing__buttons{
+  border: 1px solid #3A78F2;
+  color: #3A78F2;
+
+}
+.pricing__buttons:hover {
+  background: #3A78F2;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.6s ease 0s;
+}
+.pricing__button-border{
+  background: #3A78F2;
 }
 }
 /*----------SAY-------------------------*/
