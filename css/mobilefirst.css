@@ -1123,50 +1123,52 @@ label{
   margin-bottom: 13px;
 }
 
-.reviews__items {}
+.reviews__items {
+}
+.clients-full{
+  display: none;
+}
+.clients-mob {}
 
-.clients {}
+.clients-mob__item {}
 
-.clients__item {}
-
-.clients__body {
+.clients-mob__body {
   display: flex;
   align-items: center;
-
 }
-.clients__body-title{
+.clients-mob__body-title{
   margin-left: 15px;
 }
-.clients__title {
+.clients-mob__title {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
   color: #303E49;
 }
-.clients__title:not(:last-child){
+.clients-mob__title:not(:last-child){
   margin-bottom: 8px;
 }
-.clients__subtitle {
+.clients-mob__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: #7C7C7C;
 }
 
-.clients__content {
+.clients-mob__content {
   margin-bottom: 30px;
 }
 
-.clients__text {
+.clients-mob__text {
   color: #7C7C7C;
   line-height: 160%;
   padding: 0px 17px;
   
 }
-.clients__text:not(:last-child){
+.clients-mob__text:not(:last-child){
   margin-bottom: 46px;
 }
-.clients__logo {
+.clients-mob__logo {
   padding: 0px 17px;
 }
 
@@ -1194,6 +1196,71 @@ label{
   border: 1px solid #3A78F2;
   color: #3A78F2;
   transition: all 0.6s ease 0s;
+}
+@media (min-width:992px) {
+  .clients-mob{
+    display: none;
+  }
+  .clients-full{
+    display: block;
+  }
+.reviews {
+  padding: 107px 0 106px 0;
+}
+.reviews__text {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.reviews__title {
+  font-size: 56px;
+  line-height: 70px;
+  width: 523px;
+  margin-bottom: 53px;
+}
+.reviews__title:not(:last-child){
+  margin-bottom: 53px;
+}
+
+.clients-full {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  gap: 24px ;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.clients-full__item {
+  background-color: #FFFEFE;;
+}
+
+.clients-full__body{
+  display: flex;
+  align-items: center;
+}
+.clients-full__title{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #303E49;
+}
+.clients-full__title:not(:last-child) {
+  margin-bottom: 8px;
+}
+.clients-full__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #7C7C7C;
+}
+.clients-full__text{
+  font-size: 14px;
+  line-height: 160%;
+  color: #7C7C7C;
+  padding: 0px 32px;
+  margin-bottom: 46px;
+}
+.clients-full__logo{
+  padding: 0px 32px 40px 32px;
+}
 }
 /*----------FOOTER-------------------------*/
 .footer {
