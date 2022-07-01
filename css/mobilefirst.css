@@ -496,9 +496,6 @@ body{
   min-width: 88px;
   max-height: 88px;
 }
-.cards__body {
-  margin-left: ;
-}
 .cards__title {
   font-weight: 500;
   font-size: 24px;
@@ -734,6 +731,40 @@ body{
   line-height: 14px;
   letter-spacing: -0.02em;
   color: #DCDCDC;
+}
+@media (min-width:992px){
+.advantages::before {
+  content: '';
+  background: #3A78F2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 245px;
+  left: 0;
+}
+.advantages__body {
+  position: relative;
+  z-index: 2;
+  padding: 76px 0px;
+}
+.advantages__items {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.advantages__item{
+  padding: 0px 50px;
+}
+.advantages__value {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+.advantages__text {
+  font-size: 24px;
+  line-height: 28px;
+}
 }
 /*----------PRICING-------------------------*/
 .pricing {}
