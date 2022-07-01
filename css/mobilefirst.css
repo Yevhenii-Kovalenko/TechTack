@@ -1491,7 +1491,7 @@ label{
 }
 .subscribe__body{
   display: flex;
-  
+  justify-content: space-evenly;
   
 }
 .subscribe__email {
