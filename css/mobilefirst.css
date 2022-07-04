@@ -84,6 +84,7 @@ body{
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 ._container {
   max-width: 344px;
@@ -300,6 +301,15 @@ span.ellipse::before {
 @media (min-width:992px){
 .main-block{
   margin-top: 58px;
+}
+.main-block::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 80;
+  left: 0;
+  position: absolute;
+  background: url(../img/main/thin.svg) 0 0 no-repeat;
 }
 .main-block__body {
   display: flex;
