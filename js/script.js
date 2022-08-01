@@ -8,13 +8,11 @@ function hambHandler(e) {
    e.preventDefault();
    popup.classList.toggle("open");
    renderPopup();
+   hamb.classList.toggle('active');
 }
-
 function renderPopup() {
    popup.appendChild(menu);
 }
-
-
 //Прокрутка до розділів
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
